@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Run Application</title>
+</head>
+<body>
+	<h1>Run Application</h1>
+	<h4>Enter Runner Details</h4>
+	<form action="submitrunner" method="post">
+		<p>Input Name: <input type="text" name="runnername"></p>
+		<p>
+			Select City:
+			<select name="cityid">
+				<option th:each="City:${cityList}" th:value="${City.city_id}" th:text="${City.city_name}">
+			</select>
+		</p>
+		<input type="submit">
+	</form>
+</body>
+</html>

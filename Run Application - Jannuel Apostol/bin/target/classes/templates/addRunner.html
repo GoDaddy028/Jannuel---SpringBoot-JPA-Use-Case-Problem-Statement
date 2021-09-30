@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Fit!</title>
+</head>
+<body>
+	<h1>Get Fit!</h1>
+	<h3>Run Tracker App</h3>
+	<h4>Enter Runner Details</h4>
+	<form action="submitrunner" method="post">
+		<p>Input Runner Name: <input type="text" name="runnername"></p>
+		<p>
+			Select City:
+			<select name="cityid">
+				<option th:each="City:${cityList}" th:value="${City.city_id}" th:text="${City.city_name}">
+			</select>
+		</p>
+		<input type="submit">
+	</form>
+</body>
+</html>

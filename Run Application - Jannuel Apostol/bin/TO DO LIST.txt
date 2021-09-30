@@ -1,0 +1,17 @@
+ACCOMPLISHED:
+	Getting total distance of the runner indicated by the 'runner_id'
+	Created Page for Adding Runners
+		>Input Name for 'runner_name'
+		>Input City by selecting from dropdown populated by 'city_name' via showCityList() function
+
+TO DO LIST:
+	Submit Form of Adding Runners page
+	Add Cities
+	Add Runs
+
+	View Runs, Cities, or Runs
+
+	Create Analysis Page
+		>Total distance covered by a runner API done. Create page for this
+		>Number of runners in a city
+		>Total Distance covered in a region
